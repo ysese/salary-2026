@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026 연봉 실수령액 계산기 | 당신의 자산 가치를 확인하세요</title>
     <meta name="description" content="2026년 최신 세율을 반영한 정밀 연봉 계산기.">
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Pretendard', sans-serif; letter-spacing: -0.02em; color: #1e293b; background-color: #f8fafc; }
+        body { font-family: 'Pretendard', sans-serif; letter-spacing: -0.02em; color: #1e293b; background-color: #f8fafc; margin:0; }
         .toss-card { background: white; border-radius: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
-        .nav-active { color: #3182f6; border-bottom: 2px solid #3182f6; }
+        .nav-active { color: #3182f6 !important; border-bottom: 2px solid #3182f6 !important; }
         @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         .result-animate { animation: slideUp 0.5s ease-out; }
     </style>
@@ -21,9 +20,8 @@
     <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
         <div class="max-w-xl mx-auto flex justify-around font-bold text-sm">
             <a href="index.html" class="py-4 px-2 nav-active">연봉 계산기</a>
-            <a href="severance.html" class="py-4 px-2 text-gray-400 hover:text-gray-600">퇴직금 계산기</a>
-            <a href="table.html" class="py-4 px-2 text-gray-400 hover:text-gray-600">연봉표</a>
-            <a href="privacy.html" class="py-4 px-2 text-gray-400 hover:text-gray-600">정책</a>
+            <a href="severance.html" class="py-4 px-2 text-gray-400 hover:text-gray-600 transition-colors">퇴직금 계산기</a>
+            <a href="privacy.html" class="py-4 px-2 text-gray-400 hover:text-gray-600 transition-colors">개인정보정책</a>
         </div>
     </nav>
 
@@ -36,7 +34,7 @@
         <div class="toss-card p-8 mb-6 w-full">
             <div class="space-y-10">
                 <div class="relative">
-                    <label class="text-xs font-bold text-blue-600 uppercase mb-2 block">희망 연봉 (세전)</label>
+                    <label class="text-xs font-bold text-blue-600 uppercase mb-2 block font-black">희망 연봉 (세전)</label>
                     <div class="flex items-center border-b-2 border-gray-100 transition-all focus-within:border-blue-500">
                         <input type="number" id="annualSalary" placeholder="예: 50000000" class="w-full py-3 text-2xl font-bold outline-none bg-transparent">
                         <span class="text-xl font-bold text-gray-400 ml-2">원</span>
@@ -54,7 +52,7 @@
                     </div>
                 </div>
 
-                <button onclick="calculate()" class="w-full bg-[#3182f6] text-white py-5 rounded-2xl font-bold text-lg hover:bg-[#2563eb] active:scale-[0.98] transition-all">
+                <button onclick="calculate()" class="w-full bg-[#3182f6] text-white py-5 rounded-2xl font-bold text-lg hover:bg-[#2563eb] active:scale-[0.98] transition-all shadow-lg shadow-blue-100">
                     실수령액 확인하기
                 </button>
             </div>
@@ -67,12 +65,12 @@
 
                 <div class="space-y-4">
                     <div class="flex justify-between items-center text-sm border-b border-gray-50 pb-2">
-                        <span class="text-gray-500">공제액 합계 (세금+보험)</span>
+                        <span class="text-gray-500 font-medium">공제액 합계 (세금+보험)</span>
                         <span class="font-bold text-red-500" id="totalTax">0원</span>
                     </div>
                     <div class="p-4 bg-gray-50 rounded-xl space-y-2">
                         <p class="text-xs font-bold text-gray-400 uppercase tracking-tighter">Asset Insights</p>
-                        <p class="text-[13px] text-gray-600">이 소득으로 월 150만원 저축 시, **1억 모으기까지 <span id="toOne" class="text-blue-600 font-bold">0</span>년**이 소요됩니다.</p>
+                        <p class="text-[13px] text-gray-600 leading-relaxed">이 소득으로 월 150만원 저축 시, **1억 모으기까지 <span id="toOne" class="text-blue-600 font-bold">0</span>년**이 소요됩니다.</p>
                     </div>
                 </div>
             </div>
@@ -81,11 +79,10 @@
         <div class="px-2 mt-12 mb-20 text-gray-600 leading-relaxed w-full">
             <h2 class="text-lg font-bold text-gray-900 mb-4">2026 연봉 체계와 실질 소득 가이드</h2>
             <div class="space-y-6 text-[14px]">
-                <p>본 계산기는 2026년 개정된 건강보험료율(3.545%)과 장기요양보험료율을 정밀하게 반영하고 있습니다.</p>
-                <h3 class="font-bold text-gray-800 italic">2026 머니랩 연봉 가이드</h3>
-            </div>
-            <div class="mt-12 pt-8 border-t border-gray-200 text-[11px] text-gray-400 text-center">
-                <p>© 2026 Money Lab. All rights reserved.</p>
+                <p>본 계산기는 2026년 개정된 건강보험료율(3.545%)과 장기요양보험료율을 정밀하게 반영하고 있습니다. 특히 비과세 수당 유무에 따른 차이를 직접 확인해 보세요.</p>
+                <div class="mt-12 pt-8 border-t border-gray-200 text-[11px] text-gray-400 text-center">
+                    <p>© 2026 Money Lab. All rights reserved.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -94,11 +91,13 @@
         function calculate() {
             const salary = document.getElementById('annualSalary').value;
             if(!salary || salary <= 0) { alert('정확한 연봉을 입력해주세요.'); return; }
+
             const monthly = salary / 12;
             const meal = Number(document.getElementById('meal').value);
             const family = Number(document.getElementById('family').value);
             const taxable = monthly - meal;
 
+            // 사용자님의 정밀 2026 요율 로직
             const np = Math.min(taxable * 0.045, 271350); 
             const hi = taxable * 0.03545;
             const lti = hi * 0.1295;
@@ -120,6 +119,7 @@
             document.getElementById('toOne').innerText = yearsToTarget.toFixed(1);
             
             document.getElementById('resultBox').classList.remove('hidden');
+            window.scrollTo({ top: 300, behavior: 'smooth' });
         }
     </script>
 </body>
