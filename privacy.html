@@ -3,47 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개인정보처리방침 | 2026 연봉 계산기</title>
+    <title>개인정보처리방침</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Pretendard', sans-serif; color: #374151; }</style>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; letter-spacing: -0.02em; color: #1e293b; background-color: #f8fafc; margin:0; }
+        .nav-active { color: #3182f6 !important; border-bottom: 2px solid #3182f6 !important; }
+    </style>
 </head>
-<body class="bg-gray-50 py-12 px-4">
-    <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-sm">
-        <h1 class="text-2xl font-bold text-gray-900 mb-8">개인정보처리방침</h1>
-        
-        <div class="space-y-6 text-sm leading-7">
-            <p>본 서비스(이하 '사이트')는 이용자의 개인정보 보호를 소중하게 생각하며, 대한민국의 개인정보보호법 등 관련 법령을 준수하고 있습니다.</p>
+<body>
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-xl mx-auto flex justify-around font-bold text-sm">
+            <a href="index.html" class="py-4 px-2 text-gray-400 hover:text-gray-600">연봉 계산기</a>
+            <a href="severance.html" class="py-4 px-2 text-gray-400 hover:text-gray-600">퇴직금 계산기</a>
+            <a href="privacy.html" class="py-4 px-2 nav-active">개인정보정책</a>
+        </div>
+    </nav>
 
-            <section>
-                <h2 class="text-lg font-bold text-gray-800 mb-2">1. 개인정보의 수집 항목 및 방법</h2>
-                <p>사이트는 이용자가 계산기 기능을 이용할 때 입력하는 데이터(연봉, 비과세액 등)를 <strong>서버에 저장하거나 수집하지 않습니다.</strong> 모든 계산은 이용자의 브라우저 내에서 자바스크립트를 통해 즉시 처리되며, 페이지를 새로고침하면 휘발됩니다.</p>
-            </section>
-
-            <section>
-                <h2 class="text-lg font-bold text-gray-800 mb-2">2. 쿠키(Cookie) 및 광고 식별자</h2>
-                <p>사이트는 구글 애드센스(Google AdSense) 등 제3자 광고 서비스를 이용할 수 있습니다. 구글을 포함한 광고업체는 쿠키를 사용하여 이용자의 이전 방문 기록을 바탕으로 맞춤형 광고를 게재합니다.</p>
-                <ul class="list-disc pl-5 mt-2 space-y-1">
-                    <li>이용자는 구글의 광고 설정 페이지를 방문하여 맞춤 설정된 광고를 거부할 수 있습니다.</li>
-                    <li>사이트는 쿠키를 통해 이용자의 접속 빈도나 방문 시간 등을 분석하여 서비스 개선에 활용할 수 있습니다.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2 class="text-lg font-bold text-gray-800 mb-2">3. 개인정보의 제3자 제공</h2>
-                <p>사이트는 이용자의 개인정보를 외부에 제공하지 않습니다. 단, 법령의 규정에 의거하거나 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우는 예외로 합니다.</p>
-            </section>
-
-            <section>
-                <h2 class="text-lg font-bold text-gray-800 mb-2">4. 개인정보 보호책임자</h2>
-                <p>서비스 이용 중 발생하는 모든 개인정보 보호 관련 민원은 아래의 메일로 문의주시기 바랍니다.</p>
-                <p class="mt-1 font-semibold text-blue-600 italic">문의 이메일: [본인의 이메일 주소 또는 "사이트 내 문의하기 참조"]</p>
-            </section>
-
-            <section class="pt-6 border-t border-gray-100 text-gray-400 text-xs text-center">
-                <p>본 방침은 2026년 1월 8일부터 시행됩니다.</p>
-                <button onclick="history.back()" class="mt-6 text-blue-500 font-bold">뒤로 가기</button>
-            </section>
+    <div class="max-w-xl mx-auto py-12 px-6 bg-white min-h-screen shadow-sm">
+        <h1 class="text-2xl font-black mb-8">개인정보처리방침</h1>
+        <div class="text-sm text-gray-600 leading-7 space-y-6">
+            <p>본 사이트는 이용자의 소중한 정보를 보호하기 위해 최선을 다합니다. 입력하신 연봉 및 퇴직금 관련 데이터는 서버에 저장되지 않으며, 오직 이용자의 브라우저 내에서 계산용으로만 사용됩니다.</p>
+            <h2 class="text-lg font-bold text-gray-900">1. 수집하는 정보</h2>
+            <p>본 서비스는 별도의 회원가입 없이 이용 가능하며, 어떠한 개인식별 정보도 수집하거나 저장하지 않습니다.</p>
+            <h2 class="text-lg font-bold text-gray-900">2. 쿠키의 사용</h2>
+            <p>구글 애드센스 등 제3자 광고 서비스는 이용자의 방문 기록을 바탕으로 맞춤형 광고를 제공하기 위해 쿠키를 사용할 수 있습니다.</p>
+            <p class="mt-10 text-gray-400 text-xs text-center">© 2026 Money Lab. All rights reserved.</p>
         </div>
     </div>
 </body>
